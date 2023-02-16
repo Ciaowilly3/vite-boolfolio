@@ -5,7 +5,7 @@ export default {
   },
   data() {
     return {
-      backendUrl: "http://127.0.0.1:8000",
+      backendUrl: "http://localhost:8000",
     };
   },
 };

@@ -5,7 +5,7 @@ export default {
   components: { ProjectCard },
   data() {
     return {
-      backendUrl: "http://127.0.0.1:8000",
+      backendUrl: "http://localhost:8000",
       projects: [],
     };
   },
@@ -23,7 +23,9 @@ export default {
 </script>
 
 <template>
-  <div v-for="project in projects" :key="project.id">
-    <ProjectCard :project="project"></ProjectCard>
+  <div class="d-flex justify-content-between flex-wrap">
+    <div v-for="project in projects" :key="project.id">
+      <ProjectCard :project="project"></ProjectCard>
+    </div>
   </div>
 </template>
