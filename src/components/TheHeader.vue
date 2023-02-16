@@ -7,16 +7,20 @@
       <div id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
+            <router-link :to="{ name: 'home' }" class="nav-link">
+              <i class="fas fa-house"></i>
+            </router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <router-link :to="{ name: 'projects.index' }" class="nav-link">
+              Tutti i projects
+            </router-link>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
+          <!-- <li class="nav-item">
+            <router-link :to="{ name: 'projects.show' }" class="nav-link">
+              Tutti i projects
+            </router-link>
+          </li> -->
         </ul>
       </div>
     </nav>

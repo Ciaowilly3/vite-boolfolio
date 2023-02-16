@@ -13,8 +13,7 @@ export default {
 <template>
   <TheHeader></TheHeader>
   <div class="container">
-    <h1>Ciao</h1>
-    <ProjectsIndex></ProjectsIndex>
+    <router-view></router-view>
   </div>
 </template>
 
