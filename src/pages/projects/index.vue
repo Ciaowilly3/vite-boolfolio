@@ -1,7 +1,8 @@
 <script>
-import { onMounted } from "vue";
+import ProjectCard from "./ProjectCard.vue";
 import axios from "axios";
 export default {
+  components: { ProjectCard },
   data() {
     return {
       backendUrl: "http://127.0.0.1:8000",
@@ -23,6 +24,6 @@ export default {
 
 <template>
   <div v-for="project in projects" :key="project.id">
-    {{ project.name }}
+    <ProjectCard :project="project"></ProjectCard>
   </div>
 </template>
