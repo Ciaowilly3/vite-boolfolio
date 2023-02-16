@@ -22,6 +22,9 @@ export default {
       <p class="card-text">
         {{ project.description }}
       </p>
+      <router-link :to="{ name: 'projects.show', params: { id: project.id } }"
+        ><i class="fas fa-eye"></i
+      ></router-link>
     </div>
   </div>
 </template>

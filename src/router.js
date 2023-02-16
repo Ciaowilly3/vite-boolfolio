@@ -18,11 +18,11 @@ const router = createRouter({
       component: ProjectsIndex,
     },
 
-    // {
-    //   path: "/projects/:id",
-    //   name: "projects.show",
-    //   component: ProjectsShow,
-    // },
+    {
+      path: "/projects/:id",
+      name: "projects.show",
+      component: ProjectsShow,
+    },
   ],
 });
 
