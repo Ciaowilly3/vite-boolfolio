@@ -12,9 +12,8 @@ export default {
 
 <template>
   <TheHeader></TheHeader>
-  <div class="container">
-    <router-view></router-view>
-  </div>
+
+  <router-view></router-view>
 </template>
 
 <style lang="scss">

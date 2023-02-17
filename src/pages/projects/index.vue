@@ -23,9 +23,11 @@ export default {
 </script>
 
 <template>
-  <div class="d-flex justify-content-between flex-wrap">
-    <div v-for="project in projects" :key="project.id">
-      <ProjectCard :project="project"></ProjectCard>
+  <div class="container">
+    <div class="row py-5 gy-5">
+      <div class="col-4" v-for="project in projects" :key="project.id">
+        <ProjectCard :project="project"></ProjectCard>
+      </div>
     </div>
   </div>
 </template>

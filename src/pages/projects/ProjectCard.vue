@@ -11,7 +11,7 @@ export default {
 };
 </script>
 <template>
-  <div class="card" style="width: 18rem">
+  <div class="card h-100 border shadow" style="width: 18rem">
     <img
       class="card-img-top"
       :src="backendUrl + '/storage/' + project.cover_img"
